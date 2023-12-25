@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <button id="refresh">
+        <h1>Roll The Dice</h1>
+      </button>
+
+      <div class="dice">
+        <p id="Playern1">Player 1</p>
+        <img id="d1" class="img1" src="images/dice1.png">
+        <p>score: <label id="countlabel1" for="countlabel1">0</label></p>
+      </div>
+
+      <div class="dice">
+        <p id="Playern2">Player 2</p>
+        <img id="d2" class="img2" src="images/dice1.png">
+        <p>score: <label id="countlabel2" for="countlabel2">0</label></p>
+      </div>
+    </div>
+    <h1><label id="AcR" for="cont">0</label> / <label id="NOfR" for="cont"></label></h1>
+    <div class="c">
+    <div id="alert1" class="custom-alert custom-alert-success">
+    </div>
+    <div id="alert2" class="custom-alert custom-alert-danger">
+    </div>
+   
+    <button id="reset">
+    <h1>Play Again</h1>
+    </button>
+    </div>
+    <script src="dice.js"></script>
+
+  </body>
+
+  <footer> 
+  </footer>
+</html>
