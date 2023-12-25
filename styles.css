@@ -4,18 +4,14 @@
   display:grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-rows: 1fr 2fr ;
 }
-#refresh{
-grid-column-start: 1;
-grid-column-end: -1;
-grid-row-end: 2;
+.roll-dice{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-end: 2;
 }
-#reset{
-grid-column-start: 2;
-grid-column-end: -1;
-grid-row-end: 2;
-}
+
 .c{
   display:flex;
   justify-content: center;
@@ -68,7 +64,6 @@ footer {
   display: inline-block;
   font-size: 5rem;
 }
-
 
 
 h1{
