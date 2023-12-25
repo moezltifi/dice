@@ -68,17 +68,9 @@ footer {
   display: inline-block;
   font-size: 5rem;
 }
-.custom-alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
-  text-align: center;
-  width: 1000px;
-  height: 250px;
-  display: inline-block;
-  font-size: 5rem;
 
-}
+
+
 h1{
   text-align: center;
 }

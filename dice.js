@@ -58,10 +58,8 @@ function getRandomValues(){
     if (numberOfRound==Round){
       if (scorePlayer2<scorePlayer1){
         document.getElementById("alert1").innerHTML=palyer1 +" is the winner with score :"+scorePlayer1
-        document.getElementById("alert2").innerHTML=palyer2+" is the loser with score :"+scorePlayer2
       }
       else if (scorePlayer2>scorePlayer1){
-        document.getElementById("alert2").innerHTML=palyer1 +" is the loser with score :"+scorePlayer1
         document.getElementById("alert1").innerHTML=palyer2 +" is the winner  with score :"+scorePlayer2
 
       }
