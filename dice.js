@@ -1,14 +1,19 @@
 
 document.getElementById("refresh").onclick= getRandomValues
+function playersname(){
+  palyer1 = prompt("what is the first player's name?","player1")
+  palyer2 = prompt("what is the second player's name?","player2")
+}
+
 var scorePlayer1=0
 var scorePlayer2=0
 var numberOfRoundsPlayed=0
 let maxNumberOfRounds=5
+var palyer1=""
+var palyer2=""
 
 
-var palyer1 = prompt("what is the first player's name?","player1")
-var palyer2 = prompt("what is the second player's name?","player2")
-
+playersname()
 document.getElementById("Playern1").innerHTML =palyer1
 document.getElementById("Playern2").innerHTML =palyer2
 
@@ -20,12 +25,11 @@ function reset(){
   numberOfRoundsPlayed=0
   scorePlayer1=0
   scorePlayer2=0
+  playersname()
   document.getElementById("alert1").innerHTML=""
   document.getElementById("AcR").innerHTML =numberOfRoundsPlayed
-  document.getElementById("Playern1").innerHTML =""
-  document.getElementById("Playern2").innerHTML =""
-  document.getElementById("Playern1").innerHTML =prompt("what is the first player's name?","player1")
-  document.getElementById("Playern2").innerHTML =prompt("what is the second player's name?","player2")
+  document.getElementById("Playern1").innerHTML =palyer1
+  document.getElementById("Playern2").innerHTML =palyer2
   document.getElementById("countlabel1").innerHTML= 0
   document.getElementById("countlabel2").innerHTML= 0
 }
@@ -56,10 +60,10 @@ function getRandomValues(){
         document.getElementById("alert1").innerHTML="Draw :)"
       }
       else if (scorePlayer2<scorePlayer1){
-        document.getElementById("alert1").innerHTML=palyer1 +"\nis the winner :)"
+        document.getElementById("alert1").innerHTML=palyer1 +" \n is the winner :)"
       }
       else if (scorePlayer2>scorePlayer1){
-        document.getElementById("alert1").innerHTML=palyer2 +"\nis the winner :)"
+        document.getElementById("alert1").innerHTML=palyer2 +" \n is the winner :)"
 
       }
       
